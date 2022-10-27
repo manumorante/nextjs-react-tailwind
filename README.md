@@ -1,34 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js + React + Tailwind
 
-## Getting Started
+## Installation
 
-First, run the development server:
+Typical installation with `yarn install` for dependencies and `yarn dev` to start the server.
 
-```bash
-npm run dev
-# or
-yarn dev
+## Next.js
+
+Server is open in `http://localhost:4000` and is exposed to the network in `http://162.168...:4000` to test it in your mobile browser for example.
+
+## React
+
+It is a simple configuration, with no pre-created components, no `react-router`, no `redux` or `context`... This is to make it easier to use and understand.
+
+
+## Tailwindcss + Dark mode
+
+Use it with `dark:your-class-name`
+
+```html
+<div class="bg-white dark:bg-dark">...</div>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment suggestions
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+You can publish a static site for free and automatically on [Vercel.com](https://vercel.com/)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Create your account
+- Connect to Github
+- Click on New project
+- Import your repository
+- Deploy
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Change the domain to something like this:
 
-## Learn More
+`project-viligal-morejander.vercel.app`
 
-To learn more about Next.js, take a look at the following resources:
+To this:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`my-cool-name.vercel.app`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Inside your project go to `Settings` from the top menu and then to `Domains`.
